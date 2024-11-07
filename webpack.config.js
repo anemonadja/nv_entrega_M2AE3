@@ -4,6 +4,7 @@ const path = require('path')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -41,7 +42,10 @@ module.exports = {
         template: './src/html/contacto.html', 
         filename: 'contacto.html',
         chunks: ['main','contacto']
-      })
+      }),
+      new CopyPlugin({
+        patterns: [{ from: 'src/images', to: 'images' }],
+      }),
   ],
   module: {
     rules: [

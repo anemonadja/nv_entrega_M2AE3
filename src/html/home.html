@@ -1,188 +1,158 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <!--los autores de la plantilla que saqué del sitio de bootstrap-->
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <title>Hospital Matta</title>
+  </head>
+  
+  <body class="d-flex h-100 text-center text-bg-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-widt, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
-        <link rel="icon" type="image/jpeg" href="/assets/img/hospital-icon.jpg">
-        <meta name="description" content="Sitio web de Hospital Matta">
-        <meta property="og:title" content="Hospital Matta">
-        <meta property="og:description" content="Un poco de información sobre el Hospital Matta">
-        <meta property="og:image" content="imgs/hospital-icon.jpeg">
-        <meta property="og:image:alt" content="Hospital Matta, junto a tí toda la vida.">
-        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"
-        type="text/css">
-        <title>Hospital Matta</title>
-    </head>
-    <script src="/assets/js/main.js"></script>
-    <body>
-        <nav id="navbar">
-            <ul class="navbar-list">
-                <li>
-                <a href="/pags/index.html">Home</a>
-                </li>
-                <li>
-                <a href="/pags/equipo-medico.html">Equipo Médico</a>
-                </li>
-                <li>
-                <a href="/pags/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <header id="inicio" class="section-header">
-                <div>
-                    <img 
-                    width="50px"
-                    src="/assets/img/hospital-icon.jpg"
-                    alt="Un ícono de 3 cruces rojas."
-                    class="responsive-ing">
-                </div>
-                <div>
-                    <h1>Hospital Matta</h1>
-                </div>
-                </header>
-<!--Botón reservar cita
-    <a href="https://agenda.bupa.cl/integramedica/mis-reservas/mis-reservas-datos?_gl=1*1twupeq*_ga*OTU4ODI5NTA3LjE3MTc1Mjk4NDg.*_ga_RLCGHQDD0D*MTcyOTU0NDAxNS4zLjAuMTcyOTU0NDAxNS4wLjAuMA.."
-    target="_blank" 
-    rel="noreferrer">
-        <button>Reservar Cita</button>
-    </a>
--->
-            <section>
-                <h2 id="bienvenidos">Bienvenidos a Nuestro Hospital </h2>
-            </section>
-            <section>   
-                <div class="section-imgtxt">
-                    <div class="section-imgtxt-txt">
-                        <p>En el Hospital Matta, nos comprometemos a brindar atención médica de calidad, con un enfoque centrado en el bienestar y la dignidad de nuestros pacientes. Nuestro equipo de profesionales altamente capacitados está dedicado a ofrecer un servicio integral que cubra todas sus necesidades de salud, en un entorno cálido y acogedor.</p>
-                        <p>Ya sea que necesite una consulta, tratamiento especializado o atención de emergencia, estamos aquí para apoyarlo en cada paso de su camino hacia una mejor salud. En el Hospital Matta, su bienestar es nuestra prioridad.</p>
-                        <p><strong>Confianza, cuidado y compromiso con su salud.</strong></p>
-                    </div>
-                    <div class="section-imgtxt-img">
-                    <img
-                    width="300"
-                    height="280"
-                    title="Ícono para consultas" 
-                    alt="fachada de hospital con letras blancas y una cruz flotando en la mitad del cielo. Imagen creada con chatgpt" 
-                    src="/assets/img/foto-hospital.webp">
-                    </div>
-                </div>
-            </section>
-            <section>
-                <header>
-                    <h2>Nuestros servicios</h2>
-                </header>
-                <div>
-                    <h3 class="subtitulos">Consultas</h3>
-                    <img 
-                    width="200"
-                    height="200"
-                    title="Ícono para consultas" 
-                    alt="Ícono consultas, una cruz roja en fondo blanco" 
-                    src="/assets/img/consultas.jpg">
-                    <p>Amplia variedad de profesionales y alta disponibilidad de bloques horarios.</p>
-                </div>
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
 
-                <div>
-                    <h3 class="subtitulos">Urgencias</h3>
-                    <img 
-                width="200"
-                height="200"
-                title="Ícono para urgencias" 
-                alt="Ícono urgencias, una cruz roja menos saturada en fondo blanco" 
-                    src="/assets/img/urgencias.jpg">
-                    <p>Rápida atención en nuestra división de urgencias. Estamos preparados para atenderte en <em>máximo 1 hora desde tu llegada.</em></p>
-                </div>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Cover</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a
+              class="nav-link fw-bold py-1 px-0"
+              aria-current="page"
+              href="home.html"
+              >Home</a
+            >
+            <a
+              class="nav-link fw-bold py-1 px-0 active"
+              href="equipo-medico.html"
+              >Equipo Medico</a
+            >
+            <a class="nav-link fw-bold py-1 px-0" href="contacto.html"
+              >Contacto</a
+            >
+          </nav>
+        </div>
+      </header>
 
-                <div>
-                    <h3 class="subtitulos">Especialidades</h3>
-                    <img 
-                    width="200"
-                    height="200"
-                    title="Ícono para especialidades" 
-                    alt="Ícono especialidades, una cruz rojo oscuro en fondo blanco" 
-                    src="/assets/img/especialidades.jpg">
-                    <p>Revisa nuestra oferta de especialidades y variedad de Exámenes de Laboratorio.</p>
-                </div>
-            </section>
+      <main class="px-3">
+        <h1>Cover your page.</h1>
+        <p class="lead">
+          Cover is a one-page template for building simple and beautiful home
+          pages. Download, edit the text, and add your own fullscreen background
+          photo to make it your own.
+        </p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
+            >Learn more</a
+          >
+        </p>
+      </main>
 
-            <section>
-                <header>
-                    <h2 id="testimonios">Testimonios de Pacientes</h2>
-                </header>
-
-                <article>
-                    <h3>María González - Paciente de cirugía general</h3>
-                    <p><em>"Mi experiencia en el Hospital Matta fue excepcional. Desde el momento en que ingresé, el personal me trató con amabilidad y profesionalismo. La cirugía fue un éxito, y el seguimiento postoperatorio fue muy cuidadoso. Me sentí en buenas manos en todo momento, y recomendaría este hospital sin dudarlo a familiares y amigos."</em></p>
-                    <img 
-                    width="300"
-                    height="300"
-                    title="Testimonio de pacientes 1" 
-                    alt="María González, una mujer de 40 años sonriente, con melena castaña y rizos." 
-                    src="/assets/img/testimonio_1.jpg">
-                </article>
-
-                <article>
-                    <h3>Carlos Pérez - Paciente de atención de emergencia</h3>
-                    <p><em>"Llegué al Hospital Matta en una situación de emergencia y el equipo médico actuó rápidamente para estabilizarme. La atención fue eficiente y humana, lo que me dio mucha tranquilidad en un momento de gran estrés. Agradezco al equipo por su dedicación y profesionalismo. Hoy, gracias a ellos, estoy recuperado y en buen estado de salud."</em></p>
-                    <img style="text-align: center;"
-                    width="300"
-                    height="300"
-                    title="Testimonio de pacientes 2" 
-                    alt="Carlos Pérez, un hombre calvo pero jovial de 60 años con lentes de marco negro delgado, chaleco beige y pecas en la nuca." 
-                    src="/assets/img/testimonio_2.jpg">
-                </article>
-            </section>
-
-<!--Esto es una ventana emergente-->
-            <section>
-                <dialog id="dialog">
-                    <h1>Escríbanos</h1>
-                    <p>y resuelva sus consultas</p>
-                    <button id="hide">Cerrar ventana</button>
-                </dialog>
-                <button id="show">Información adicional</button>
-                <script>
-                    window.show.addEventListener('click',() => {
-                        window.dialog.showModal()
-                    })
-                    window.hide.addEventListener('click',() => {
-                        window.dialog.close()
-                    })
-                </script>
-            </section>
-            <hr>
-        </main>
-        <footer style="text-align: center;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <article>
-                    <h4>Enlaces Rápidos</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="/M2AE2/pags/index.html#servicios">Servicios</a></li>
-                        <li><a href="/M2AE2/pags/equipo-medico.html">Equipo Médico</a></li>
-                        <li><a href="/M2AE2/pags/contacto.html">Contacto</a></li>
-                    </ul>
-                </article>
-            <!--
-            <article>
-                    <h4>Redes sociales</h4>
-                    <a target="_blank" href="#" aria-label="Instagram"
-                    height="100"
-                    title="Ícono para especialidades" 
-                    alt="Ícono especialidades, una cruz rojo oscuro en fondo blanco" 
-                    ><img src="/M2AE2/assets/img/icon-ig.svg" alt="Instagram">
-                    <a target="_blank" href="#" aria-label="Mail"
-                    ><img src="/M2AE2/assets/img/icon-mail.svg" alt="Mail">
-                    <a target="_blank" href="#" aria-label="Whatsapp"
-                    ><img src="/M2AE2/assets/img/icon.wapp.svg" alt="Whatsapp">
-                </article>
-            -->
-            </div>
-        </footer>
-    </body>
+      <footer class="mt-auto text-white-50">
+        <p>
+          Hecho por el equipo de los PRO
+          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
+          by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
+        </p>
+      </footer>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
