@@ -9,10 +9,30 @@
       name="author"
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
+    <link rel="icon" type="image/jpeg" href="images/favicon-logo-hospital-positivo.jpg">
     <title>Hospital Matta</title>
   </head>
   
   <body class="d-flex h-100 text-center text-bg-dark">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-theme="dark" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Reserva tu cita</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Recuerda traer tu carnet de identidad y tu receta médica.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Agendar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -111,45 +131,123 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
-          <h3 class="float-md-start mb-0">Cover</h3>
+          <h3 class="float-md-start mb-0">Hospital Matta</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a
-              class="nav-link fw-bold py-1 px-0"
+              class="nav-link fw-bold py-1 px-0 active"
               aria-current="page"
               href="home.html"
               >Home</a
             >
             <a
-              class="nav-link fw-bold py-1 px-0 active"
+              class="nav-link fw-bold py-1 px-0"
               href="equipo-medico.html"
               >Equipo Medico</a
             >
             <a class="nav-link fw-bold py-1 px-0" href="contacto.html"
               >Contacto</a
             >
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Reservar Cita
+            </button>
           </nav>
         </div>
       </header>
 
-      <main class="px-3">
-        <h1>Cover your page.</h1>
-        <p class="lead">
-          Cover is a one-page template for building simple and beautiful home
-          pages. Download, edit the text, and add your own fullscreen background
-          photo to make it your own.
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
-            >Learn more</a
-          >
-        </p>
+      <main class="px-3 mt-5">
+        <div class="row">
+          <div class="col">
+            <h1>Bienvenidos</h1>
+            <p class="lead">
+            En el Hospital Matta, nos comprometemos a brindar atención médica de calidad, con un enfoque centrado en el bienestar y la dignidad de nuestros pacientes. Nuestro equipo de profesionales altamente capacitados está dedicado a ofrecer un servicio integral que cubra todas sus necesidades de salud, en un entorno cálido y acogedor.
+            /Ya sea que necesite una consulta, tratamiento especializado o atención de emergencia, estamos aquí para apoyarlo en cada paso de su camino hacia una mejor salud. En el Hospital Matta, su bienestar es nuestra prioridad.
+            Confianza, cuidado y compromiso con su salud.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-m12">
+            <h2 id="servicios">Servicios</h2>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/consultas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Consulta</h5>
+                <p class="card-text">Amplia variedad de profesionales y alta disponibilidad de bloques horarios.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/urgencias.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Urgencias</h5>
+                <p class="card-text">Rápida atención en nuestra división de urgencias. <em>Estamos preparados para atenderte en máximo 1 hora desde tu llegada.</em></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/especialidades.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Especialidades</h5>
+                <p class="card-text">Revisa nuestra oferta de especialidades y variedad de Exámenes de Laboratorio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h2>Testimonios</h2>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="images/testimonio_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><em>"Mi experiencia en el Hospital Matta fue excepcional. Desde el momento en que ingresé, el personal me trató con amabilidad y profesionalismo. La cirugía fue un éxito, y el seguimiento postoperatorio fue muy cuidadoso. Me sentí en buenas manos en todo momento, y recomendaría este hospital sin dudarlo a familiares y amigos."</em>
+                </p>
+                <p><strong>María González - Paciente de cirugía general</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <img src="images/testimonio_2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><em>"Llegué al Hospital Matta en una situación de emergencia y el equipo médico actuó rápidamente para estabilizarme. La atención fue eficiente y humana, lo que me dio mucha tranquilidad en un momento de gran estrés. Agradezco al equipo por su dedicación y profesionalismo. Hoy, gracias a ellos, estoy recuperado y en buen estado de salud."</em>
+                </p>
+                <p><strong>Carlos Pérez - Paciente de atención de emergencia</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
-      <footer class="mt-auto text-white-50">
+      <footer class="text-white-50">
+        <hr>
         <p>
-          Hecho por el equipo de los PRO
-          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
-          by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
+          <a href="home.html#servicios" class="text-white">Servicios</a>
+        </p>
+
+        <p>
+          <a href="equipo-medico.html" class="text-white">Equipo Medico</a>
+        </p>
+
+        <p>
+          <a href="https://youtu.be/T_QAxvPjjBc?si=D4rLvDRRNkL1U43Q" target="_blank" class="text-white">Video de presentación</a>
         </p>
       </footer>
     </div>
